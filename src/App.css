@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body{
+  background-color: purple;
+  color: #00384f
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  display: grid;
+  grid-template-areas: 
+  "one one two two three three four four"
+  "one one two two three three four four"
+  "one one five five five five five five"
+  "one one five five five five five five"
+  ;
+  gap: 1em;
+  margin: 20px 10px 20px 10px;
+}
+.one{
+  grid-area: one;
+  height: 100vh;
+  background-color: grey;
+  box-shadow: 5px 10px;
+}
+.two{
+  grid-area: two;
+  background-color: grey;
+  box-shadow: 5px 10px;
+}
+.three{
+  grid-area: three;
+  background-color: grey;
+  box-shadow: 5px 10px;
+
+}
+.four{
+  grid-area: four;
+  background-color: grey;
+  box-shadow: 5px 10px;
+}
+.five{
+  background-color: grey;
+  grid-area: five;
+  box-shadow: 5px 10px;
+}
+.title{
+  font-size: 25px;
+  padding: 10px;
+}
+.num{
+  font-size: 30px;
+  padding: 10px;
+}
+.multi{
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.side-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-direction: column;
+  height: 100% ;
+  font-size: 25px; 
 }
